@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.so
+
+# packaging
+build/
+dist/
+*.egg-info/
+
+# envs
+.venv/
+venv/
+
+# local files
+.DS_Store
+*.log
