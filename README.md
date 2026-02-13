@@ -13,6 +13,14 @@ If you want to run the package, please email us (the project maintainers) to req
 pip install -e ./Bridge
 ```
 
+Conda package (published):
+
+```bash
+conda install -c eonurk -c conda-forge -c pytorch bridge
+```
+
+Package page: `https://anaconda.org/eonurk/bridge`
+
 ## Quick start (RNA count matrix -> predictions)
 
 ```python
