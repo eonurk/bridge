@@ -1,0 +1,15 @@
+samples:
+  - demo1
+
+bridge:
+  # Input matrix path template for each sample wildcard.
+  input_pattern: "input/{sample}.csv"
+  output_dir: "results/bridge"
+
+  # Used only with BRIDGE_BUNDLE_URL.
+  bundle_cache_dir: "/shared/cache/bridge"
+
+  batch_size: 256
+  device: "auto"
+  use_attention: false
+  threads: 1

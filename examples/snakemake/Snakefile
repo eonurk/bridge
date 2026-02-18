@@ -1,0 +1,16 @@
+configfile: "config.yaml"
+
+include: "rules/bridge.smk"
+
+SAMPLES = config.get("samples", [])
+
+
+def _prediction_output(sample: str) -> str:
+    out_dir = config["bridge"]["output_dir"]
+    return f"{out_dir}/{sample}.predictions.csv"
+
+
+rule all:
+    input:
+        [_prediction_output(sample) for sample in SAMPLES]
+

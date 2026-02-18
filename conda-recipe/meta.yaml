@@ -1,5 +1,5 @@
 {% set name = "bridge" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -32,6 +32,7 @@ test:
     - bridge
   commands:
     - python -c "from bridge import BridgePredictor; print('Bridge import OK')"
+    - bridge --help
 
 about:
   home: https://github.com/eonurk/Bridge
